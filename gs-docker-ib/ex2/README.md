@@ -28,7 +28,7 @@ docker network create mongodb
 - Create two containers running mongo image one for configs, another for databases
 
 ```
-docker run -it -rm -d -v mongodb:/data/db -v mongodb_config:/data/configdb -p 27017:27017 --network mongodb --name mongodb mongo
+docker run -it --rm -d -v mongodb:/data/db -v mongodb_config:/data/configdb -p 27017:27017 --network mongodb --name mongodb mongo
 
 ```
 
