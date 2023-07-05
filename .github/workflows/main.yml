@@ -24,4 +24,4 @@ jobs:
           context: ./gs-docker-ib/ex3/
           file: ./gs-docker-ib/ex3/Dockerfile
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/clockbox:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/docker-ex-301-test:latest
