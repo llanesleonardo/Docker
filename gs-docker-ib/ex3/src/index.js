@@ -11,7 +11,7 @@ async function main() {
     });
     server.use("/foo", (req, res) => {
       return res.json({ foo: "bar" });
-      debugger;
+      // debugger;
     });
     server.use("/", mocks.server(server.Router()));
     const result = await server.start();
